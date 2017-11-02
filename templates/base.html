@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Olivine Marketing</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="{% static '/static/images/favicon.ico' %}"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static '/static/css/main.css' %}">
+    <script src="{% static '/static/js/vendor/modernizr-2.6.2.js' %}"></script>
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <img class="img-fluid" src="{% static '/static/images/logo.png' %}" alt="Olivine Marketing">
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link {% if_current_page '/index.html' 'active' '' %}" href="{% url '/index.html' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {% if_current_page '/offerings.html' 'active' '' %}" href="{% url '/offerings.html' %}">Offerings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {% if_current_page '/about.html' 'active' '' %}" href="{% url '/about.html' %}">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {% if_current_page '/portfolio.html' 'active' '' %}" href="{% url '/portfolio.html' %}">portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {% if_current_page '/contact.html' 'active' '' %}" href="{% url '/contact.html' %}">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    {% block body %}
+    {% endblock %}
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="{% static '/static/js/main.js' %}"></script>
+  </body>
+
+  {% block scripts %}
+  {% endblock %}
+</html>
