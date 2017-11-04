@@ -1,1 +1,5 @@
-{}
+{
+    "aws-access-key": "AKIAJUTXM4JX2BMGVUHQ",
+    "aws-bucket-name": "www.olivinemarketing.com",
+    "aws-bucket-website": "www.olivinemarketing.com.s3-website-us-east-1.amazonaws.com"
+}

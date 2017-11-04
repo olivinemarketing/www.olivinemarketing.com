@@ -1,5 +1,14 @@
+@font-face {
+    font-family: "Greycliff CF";
+    src: url(/static/fonts/GreycliffCF-Regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Greycliff CF Light";
+    src: url(/static/fonts/GreycliffCF-Light.woff) format("woff");
+}
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Greycliff CF', 'Poppins', sans-serif;
   overflow-x: hidden;
   color: #1b1e28;
 }
@@ -183,8 +192,9 @@ section.success {
 
 header.masthead {
   padding-bottom: 50px;
-  margin-top: 150px;
+  padding-top: 50px;
   text-align: center;
+  height: 100vh;
   background: linear-gradient(#19ccc0, #049ae7);
 }
 
@@ -204,6 +214,7 @@ header.masthead .intro-text .explanation {
 @media (min-width: 768px) {
   header.masthead {
     padding-bottom: 100px;
+    padding-bottom: 150px;
   }
   header.masthead>.container {
     width: 830px;
@@ -222,6 +233,19 @@ header.masthead .intro-text .explanation {
 #portfolio .portfolio-item {
   right: 0;
   margin: 0 0 15px;
+}
+
+#transformation .huge {
+  font-size: 2em;
+}
+
+#transformation .tiny {
+  font-size: 0.6em;
+  margin-top: -3em;
+}
+
+#transformation .row {
+  margin-top: 4em;
 }
 
 #portfolio .portfolio-item .portfolio-link {
