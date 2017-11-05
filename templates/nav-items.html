@@ -1,0 +1,9 @@
+<a class="nav-link nav-item m-2 {% if_current_page '/index.html' 'active' '' %}"
+  href="{% url '/index.html' %}">Home</a>
+<a class="nav-link nav-item m-2 {% if_current_page '/offerings.html' 'active' '' %}"
+  href="{% url '/offerings.html' %}">Offerings</a>
+<a class="nav-link nav-item m-2 {% if_current_page '/about.html' 'active' '' %}"
+  href="{% url '/about.html' %}">About</a>
+<a class="nav-link nav-item m-2 {% if_current_page '/portfolio.html' 'active' '' %}"
+  href="{% url '/portfolio.html' %}">portfolio</a>
+<a class="nav-link nav-item p-2 border-yellow rounded" href="mailto:contact@olivinemarketing.com">Contact</a>

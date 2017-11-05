@@ -15,46 +15,46 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
           integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static '/static/css/main.css' %}">
+    <script src="https://use.fontawesome.com/5ba8f49330.js"></script>
     <script src="{% static '/static/js/vendor/modernizr-2.6.2.js' %}"></script>
   </head>
 
   <body id="page-top">
-
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand" href="#page-top">
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainnav">
+      <div class="container mx-5">
+        <a class="navbar-brand" href="{% url '/index.html' %}">
           <img class="d-none d-lg-block img-fluid" src="{% static '/static/images/logo.png' %}" alt="Olivine Marketing">
           <img class="d-lg-none" src="{% static '/static/images/logo-sm.png' %}" alt="Olivine Marketing">
         </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link {% if_current_page '/index.html' 'active' '' %}" href="{% url '/index.html' %}">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link {% if_current_page '/offerings.html' 'active' '' %}" href="{% url '/offerings.html' %}">Offerings</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link {% if_current_page '/about.html' 'active' '' %}" href="{% url '/about.html' %}">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link {% if_current_page '/portfolio.html' 'active' '' %}" href="{% url '/portfolio.html' %}">portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link {% if_current_page '/contact.html' 'active' '' %}" href="{% url '/contact.html' %}">Contact</a>
-            </li>
-          </ul>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="navbar-nav ml-auto">
+            {% include "nav-items.html" %}
+          </div>
         </div>
       </div>
     </nav>
 
     {% block body %}
     {% endblock %}
+    <footer class="footer">
+      <nav class="navbar navbar-expand-lg navbar-light p-5 mt-5" id="bottomnav">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <div class="navbar-nav">
+              {% include "nav-items.html" %}
+            </div>
+          </div>
+        </div>
+      </nav>
+    </footer>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="{% static '/static/js/main.js' %}"></script>
