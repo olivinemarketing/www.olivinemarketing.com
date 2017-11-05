@@ -114,18 +114,26 @@
     <p class="thick">
       A few companies we've worked with
     </p>
-    <img class="img-fluid" src="{% static '/static/images/companies.png' %}" alt="Companies">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <img class="img-fluid" src="{% static '/static/images/companies.png' %}" alt="Companies">
+    </div>
+  </div>
 
-  <div class="container text-center">
-    <blockquote class="blockquote">
-      <i class="fa fa-quote-left text-muted" aria-hidden="true"></i>
-      Working with Olivine is an awesome experience. We only have to share
-      a high level guideline of what we want to achieve and they drive it all
-      the way and bring back amazing results.
-      <i class="fa fa-quote-right text-muted" aria-hidden="true"></i>
-    <footer class="blockquote-footer">
-      Moshe Milman, Co-Founder & COO of Applitools</footer>
-    </blockquote>
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-8">
+        <blockquote class="blockquote">
+          <i class="fa fa-quote-left text-muted" aria-hidden="true"></i>
+          Working with Olivine is an awesome experience. We only have to share
+          a high level guideline of what we want to achieve and they drive it all
+          the way and bring back amazing results.
+          <i class="fa fa-quote-right text-muted" aria-hidden="true"></i>
+        <footer class="blockquote-footer pt-3">
+          Moshe Milman, Co-Founder & COO of Applitools</footer>
+        </blockquote>
+      </div>
+    </div>
   </div>
 
 {% endblock %}

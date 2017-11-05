@@ -192,10 +192,6 @@ header.masthead .intro-text .learn {
     font-size: 1.2em;
     line-height: 2em;
   }
-  #companies blockquote {
-    width: 830px;
-    margin-left: calc(50% - 415px);
-  }
 }
 
 #transformation .huge {
