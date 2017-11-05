@@ -147,6 +147,10 @@ header.offerings {
   background: #19ccc0;
 }
 
+header.about {
+  background: #049ae7;
+}
+
 header.masthead .intro-text .slogan {
   padding-top: calc(50vh - 300px);
 }

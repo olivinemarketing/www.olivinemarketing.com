@@ -1,10 +1,97 @@
 {% extends "base.html" %}
 
 {% block body %}
-<div class="jumbotron">
+<link rel="stylesheet" href="{% static '/static/css/about-tweaks.css' %}">
+<!-- Header -->
+<header class="masthead about">
+  <img class="d-lg-none" src="{% static '/static/images/olivine.png' %}" alt="Olivine Marketing">
   <div class="container">
-    <h1>Make this your about page!</h1>
-    <p>Use this page to tell your visitors about you. Or scrape it, and make a new one!</p>
+    <div class="intro-text py-5">
+      <span class="slogan">
+        Who We Are
+      </span>
+      <br>
+      <span class="explanation">
+        We are not your typical marketing agency. We’re a small team with deep
+        knowledge of the developer tooling space. This means we understand your
+        business before we ever talk. Continuous Integration? Containers?
+        Selenium? Yes, we know what that means. 
+      <span>
+      <span class="learn">
+        Learn How<br>
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
+    </div>
   </div>
+</header>
+
+<section id="customer-stories">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-4">
+        <h3 class="font-weight-bold">
+          Customer Stories
+        </h3>
+        <p class="tall">
+        Your customers are your best marketers. Leverage their success with your
+        product through powerful and engaging video and written case studies,
+        customer pages & testimonials. We handle this end-to-end. All you have to do
+        is connect us with your top customers, then revel in the praise. 
+        </p>
+      </div>
+      <div class="col-sm-6">
+        <a href="https://www.youtube.com/watch?v=1j9AP1uOBhI">
+        <img class="img-fluid pull-right" src="{% static '/static/images/customer-stories-video.png' %}">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container">
+  <hr>
 </div>
+<section id="messaging-positioning">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-6 d-none d-md-block">
+        <img class="img-fluid pull-left" src="{% static '/static/images/messaging-positioning.png' %}">
+      </div>
+      <div class="col-sm-4">
+        <h3 class="font-weight-bold">
+          Messaging & Positioning
+        </h3>
+        <p class="tall">
+        As you shift to selling to the enterprise, how you talk about your
+        company changes. Through personas sessions, positioning workshops and
+        copywriting, we help your team develop messaging and positioning that
+        gives large organizations confidence in your product.  
+        </p>
+      </div>
+      <div class="col-sm-6 d-md-none">
+        <img class="img-fluid pull-left" src="{% static '/static/images/messaging-positioning.png' %}">
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container"><hr></div>
+<section id="sales-enablement">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-4">
+        <h3 class="font-weight-bold">
+          Sales Enablement
+        </h3>
+        <p class="tall">
+        Your sales team needs clear and compelling marketing collateral to do
+        their job well. We work with you to build well-positioned and
+        beautifully designed sales decks, data sheets, white papers and other
+        material to help close those bigger deals. 
+        </p>
+      </div>
+      <div class="col-sm-6">
+        <img class="img-fluid pull-right" src="{% static '/static/images/sales-enablement.png' %}">
+      </div>
+    </div>
+  </div>
+</section>
+
 {% endblock %}
