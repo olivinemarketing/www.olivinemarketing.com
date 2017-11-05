@@ -11,6 +11,7 @@ body {
   font-family: 'Greycliff CF', 'Poppins', sans-serif;
   overflow-x: hidden;
   color: #1b1e28;
+  background-color: #f4f4f4;
 }
 
 a, a.active, a:active, a:focus, a:hover {
@@ -142,6 +143,10 @@ header.masthead {
   background: linear-gradient(#19ccc0, #049ae7);
 }
 
+header.offerings {
+  background: #19ccc0;
+}
+
 header.masthead .intro-text .slogan {
   padding-top: calc(50vh - 300px);
 }
@@ -167,6 +172,9 @@ header.masthead .intro-text .learn {
 .thick {
   font-weight: bold;
   font-size: 1.5em;
+}
+.tall {
+  line-height: 2em;
 }
 @media (min-width: 768px) {
   header.masthead>.container {
