@@ -1,12 +1,13 @@
 @font-face {
-    font-family: "Greycliff CF";
-    src: url(/static/fonts/GreycliffCF-Regular.woff) format("woff");
+  font-family: "Greycliff CF";
+  src: url(/static/fonts/GreycliffCF-Regular.woff) format("woff");
 }
 
 @font-face {
-    font-family: "Greycliff CF Light";
-    src: url(/static/fonts/GreycliffCF-Light.woff) format("woff");
+  font-family: "Greycliff CF Light";
+  src: url(/static/fonts/GreycliffCF-Light.woff) format("woff");
 }
+
 body {
   font-family: 'Greycliff CF', 'Poppins', sans-serif;
   overflow-x: hidden;
@@ -14,7 +15,11 @@ body {
   background-color: #f4f4f4;
 }
 
-a, a.active, a:active, a:focus, a:hover {
+a,
+a.active,
+a:active,
+a:focus,
+a:hover {
   color: #18BC9C;
   outline: none;
 }
@@ -73,9 +78,11 @@ section.success {
   border: none;
   font-weight: 700;
 }
+
 #mainnav {
   background: #19ccc0;
 }
+
 #bottomnav {
   background: #bcbec0;
   position: absolute;
@@ -84,6 +91,7 @@ section.success {
   display: block;
 
 }
+
 .navbar a:focus {
   outline: none;
 }
@@ -93,14 +101,17 @@ section.success {
   padding: 0;
   margin: 0 0.5rem;
 }
+
 .navbar .navbar-nav .nav-link.active {
   border-bottom: 2px solid #fddd02;
 }
+
 .navbar .navbar-nav .nav-link:hover {
   border-bottom: 1px solid #fddd02;
 }
 
-.navbar .navbar-nav .nav-link:active, .navbar .navbar-nav .nav-link:focus {
+.navbar .navbar-nav .nav-link:active,
+.navbar .navbar-nav .nav-link:focus {
   border-bottom: 2px solid #fddd02;
 }
 
@@ -112,7 +123,8 @@ section.success {
   border-color: #fddd02;
 }
 
-.navbar .navbar-toggler:focus, .navbar .navbar-toggler:hover {
+.navbar .navbar-toggler:focus,
+.navbar .navbar-toggler:hover {
   color: #1b1e28;
   border-color: #fddd02;
   background-color: #fddd02;
@@ -154,6 +166,7 @@ header.about {
 header.masthead .intro-text .slogan {
   padding-top: calc(50vh - 300px);
 }
+
 header.masthead .intro-text .slogan {
   font-size: 1.5em;
   display: block;
@@ -177,9 +190,22 @@ header.masthead .intro-text .learn {
   font-weight: bold;
   font-size: 1.5em;
 }
+
+.card-img-overlay {
+  background-color: #333;
+  color: white;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.card-img-overlay:hover {
+  opacity: 1;
+}
+
 .tall {
   line-height: 2em;
 }
+
 @media (min-width: 768px) {
   header.masthead>.container {
     width: 830px;
@@ -212,7 +238,8 @@ section .row {
   color: white;
 }
 
-#products a, #products a:hover{
+#products a,
+#products a:hover {
   color: white;
 }
 
