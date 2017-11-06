@@ -83,6 +83,15 @@ section.success {
   background: #19ccc0;
 }
 
+.background-yellow {
+  background-color: #fddd02;
+}
+.background-blue {
+  background-color: #049ae7;
+}
+.background-green {
+  background-color: #19ccc0;
+}
 #bottomnav {
   background: #bcbec0;
   position: absolute;
