@@ -5,10 +5,10 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="{{ description }}">
+    <meta name="description" content="{% block description %}{% endblock %}">
     <meta name="author" content="Olivine Marketing">
 
-    <title>{{ title }}</title>
+    <title>{% block title %}{% endblock %}</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="{% static '/static/images/favicon.ico' %}"/>
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
