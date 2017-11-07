@@ -1,15 +1,7 @@
 #mainnav {
   background: #049ae7;
 }
-#team .row > [class*='col-'] {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-}
 
-#team .row > [class*='col-'] img {
-  align-self: flex-end;
-}
 #team img {
-      border: 1.5rem solid #bcbec0;
+  border: 1.5rem solid #bcbec0;
 }
