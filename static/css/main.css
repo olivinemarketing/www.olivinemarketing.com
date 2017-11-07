@@ -92,15 +92,15 @@ section.success {
 }
 
 .background-yellow {
-  background-color: #fddd02;
+  background: #fddd02!important;
 }
 
 .background-blue {
-  background-color: #049ae7;
+  background: #049ae7!important;
 }
 
 .background-green {
-  background-color: #19ccc0;
+  background: #19ccc0!important;
 }
 
 #bottomnav {
@@ -173,14 +173,6 @@ header.masthead {
   text-align: center;
   height: calc(100vh - 100px);
   background: linear-gradient(#19ccc0, #049ae7);
-}
-
-header.offerings {
-  background: #19ccc0;
-}
-
-header.about {
-  background: #049ae7;
 }
 
 header.masthead .intro-text .slogan {
