@@ -1,16 +1,30 @@
 {% extends "base.html" %}
 
 {% block body %}
-<div class="container">
-  <div class="card m-3">
-    <img class="card-img-top" src="{% static '/static/images/portfolio-7.jpg' %}" alt="Xplenty Case Study">
-    <div class="card-block p-3">
-      <h4 class="card-title">Xplenty: Customer Stories</h4>
-      <p class="card-text">We worked with Xplenty, a data integration startup, on a set of customer
-        case study videos that highlight why their customers love their product. This video features
-        GoGaurdian sharing how they use Xplenty to manage the data for their education-focused SaaS
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="clearfix">
+        <div class="p-3 background-yellow float-right font-weight-900">
+        CUSTOMER STORIES
+        </div>
+      </div>
+
+      <hr class="mt-0">
+      <h3 class="mt-5 text-center">Xplenty</h3>
+      <h5 class="mt-4 text-center">GoGuardian Customer Story</h5>
+      <p class="my-5">
+        We worked with <a href="https://www.xplenty.com/">Xplenty</a>,
+        a data integration startup, on a set of customer case study
+        videos that highlight why their customers love their product.
+        This video features GoGuardian sharing how they use Xplenty
+        to manage the data for their education-focused SaaS
         product.
       </p>
+
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.xplenty.com/case-studies/goguardian/?wvideo=pmriel9uvc" allowfullscreen></iframe>
+      </div>
     </div>
   </div>
 </div>

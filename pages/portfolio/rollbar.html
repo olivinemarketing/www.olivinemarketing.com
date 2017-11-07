@@ -1,17 +1,30 @@
 {% extends "base.html" %}
 
 {% block body %}
-<div class="container">
-  <div class="card m-3">
-    <img class="card-img-top" src="{% static '/static/images/portfolio-1.jpg' %}" alt="Rollbar Case Study">
-    <div class="card-block p-3">
-      <h4 class="card-title">Rollbar: Case Study Series</h4>
-      <p class="card-text">We did a series of video and written case studies for
-      Rollbar, a software startup in San Francisco, and created a customer page on
-      their website to highlight these stories. This video features Instacart, one
-      of their many happy customers, showing off how Rollbar accelerates their
-      continuous delivery adoption.
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="clearfix">
+        <div class="p-3 background-yellow float-right font-weight-900">
+          CUSTOMER STORIES
+        </div>
+      </div>
+
+      <hr class="mt-0">
+      <h3 class="mt-5 text-center">Rollbar</h3>
+      <h5 class="mt-4 text-center">Instacart Customer Story</h5>
+      <p class="my-5">
+      We did a series of video and written case studies for
+      <a href="https://www.rollbar.com/">Rollbar</a>, a software startup in San Francisco,
+      and created a customer page on their website to highlight these stories.
+      This video features Instacart, one of their many happy customers, showing
+      off how Rollbar accelerates their continuous delivery adoption.
       </p>
+
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://fast.wistia.com/embed/iframe/80ekxe3s7a" allowfullscreen></iframe>
+
+      </div>
     </div>
   </div>
 </div>

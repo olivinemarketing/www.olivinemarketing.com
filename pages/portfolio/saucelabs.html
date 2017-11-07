@@ -1,15 +1,29 @@
 {% extends "base.html" %}
 
 {% block body %}
-<div class="container">
-  <div class="card m-3">
-    <img class="card-img-top" src="{% static '/static/images/portfolio-5.jpg' %}" alt="Sauce Labs Case Study">
-    <div class="card-block p-3">
-      <h4 class="card-title">Sauce Labs: Customer Stories</h4>
-      <p class="card-text">For Sauce Labs, we created a variety of written and video case studies.
-        Here is one featuring Eventbrite, the popular event management platform
-        on how they use Sauce Labs to automatically test that their service.
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="clearfix">
+        <div class="p-3 background-yellow float-right font-weight-900">
+          CUSTOMER STORIES
+        </div>
+      </div>
+
+      <hr class="mt-0">
+      <h3 class="mt-5 text-center">Sauce Labs</h3>
+      <h5 class="mt-4 text-center">Eventbrite Customer Story</h5>
+      <p class="my-5">
+        We worked with <a href="https://www.saucelabs.com/">Sauce Labs</a>,
+        a late-stage growth company based in San Francisco, to create a
+        variety of written and video case studies.Here is one featuring
+        Eventbrite, the popular event management platform on how they
+        use Sauce Labs to automatically test that their service.
       </p>
+
+      <img class="card-img-top" src="{% static '/static/images/portfolio-5.jpg' %}" alt="SauceLabs Case Study">
+      <div class="card-block p-3">
+        <a href="https://saucelabs.com/case-studies/eventbrite-catches-issues-sooner-and-debugs-faster-using-sauce-labs" class="btn btn-primary">Read The Case Study</a>
     </div>
   </div>
 </div>
