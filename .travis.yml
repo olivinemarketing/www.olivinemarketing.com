@@ -4,8 +4,8 @@ python:
   - '3.4'
 install:
   - pip install -r requirements.txt
-  - apt-get install yui-compressor
-  - apt-get install closure-compiler
+  - sudo apt-get install yui-compressor
+  - sudo apt-get install closure-compiler
 script:
   - cactus deploy
 branches:
