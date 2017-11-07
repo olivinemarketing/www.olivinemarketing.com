@@ -4,6 +4,8 @@ python:
 - '3.4'
 install:
 - pip install -r requirements.txt
+- wget http://yui.zenfs.com/releases/yuicompressor/yuicompressor-2.4.7.zip && unzip yuicompressor-2.4.7.zip -d vendor/java
+- export YUI_COMPRESSOR_JAR=vendor/java/yuicompressor-2.4.7/build/yuicompressor-2.4.7.jar
 script:
 - cactus deploy
 branches:

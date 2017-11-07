@@ -7,6 +7,10 @@
         "css",
         "png"
     ],
+    "optimize": [
+        "js",
+        "css"
+    ],
     "prettify": true,
     "site-url": "http://olivinemarketing.com"
 }
