@@ -263,6 +263,9 @@ section .row {
   color: white;
 }
 
-.border-yellow {
+
+.border-yellow,
+.border-yellow:hover {
   border: 2px solid #fddd02;
+  border-bottom: 2px solid #fddd02!important;
 }
