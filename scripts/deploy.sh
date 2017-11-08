@@ -7,6 +7,4 @@ if [[ $1 == "production" ]]
 then
   cactus deploy
   aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths '/*'
-else
-  cactus build
 fi

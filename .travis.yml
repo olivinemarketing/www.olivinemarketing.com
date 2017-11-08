@@ -4,11 +4,8 @@ python:
 - '2.7'
 install:
 - pip install -r requirements.txt
+script: cactus build
 deploy:
-- provider: script
-  script: scripts/deploy.sh build
-  on:
-    all_branches: true
 - provider: script
   script: scripts/deploy.sh production
   on:
